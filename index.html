@@ -4,23 +4,39 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="assets/stylesheets/index.css">
-	<link rel="stylesheet" href="assets/stylesheets/slick.css">
+	<link rel="stylesheet" href="./assets/css/index.css" />
+	<link rel="stylesheet" href="./assets/css/slick.css" />
 </head>
-<body>
-	<h1>Hello Simaria2018</h1>
-	<div id="web-carousel">
-		<div>a</div>
-		<div>b</div>
-		<div>c</div>
+<body class="loading">
+	<div class="main-bg"></div>
+	<div class="main-content">
+		<loading></loading>
+		<div id="web-carousel" class="carousel">
+			<div class="page h" number="1"></div>
+			<div class="page h" number="2"></div>
+			<div class="page h" number="3"></div>
+		</div>
+		<div id="mobile-carousel" class="carousel">
+			<div class="page v" number="1"></div>
+			<div class="page v" number="2"></div>
+			<div class="page v" number="3"></div>
+		</div>
+
 	</div>
-	<div id="mobile-carousel">
-		<div></div>
-		<div></div>
-		<div></div>
+
+	<div class="footer">
+		<prev class="prev my-slick-arrow">&lt;</prev>
+		<span class="first">Toll Free Number: 1800 1200 600</span>
+		<span>Website Under Construction</span>
+		<next class="next my-slick-arrow">&gt;</next>
 	</div>
-	<script src="assets/javascripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-	<script src="assets/javascripts/index.js" type="text/javascript"></script>
-	<script src="assets/javascripts/slick.min.js" type="text/javascript"></script>
+	
+	<div id="carouselBannerMaster"></div>
+
+	<script src="./assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="./assets/js/slick.min.js" type="text/javascript"></script>
+	<script src="./assets/js/carousel_data.js" type="text/javascript"></script>
+	<script src="./assets/js/index.js" type="text/javascript"></script>
+
 </body>
 </html>

@@ -1,0 +1,17 @@
+
+.page.h[number="1"] {
+	background-image:url('../img/banners/h/1.png');
+}
+
+
+.page.h[number="2"] {
+	background-image:url('../img/banners/h/2.png');
+}
+
+.page.v[number="1"] {
+	background-image:url('../img/banners/v/1.png');
+}
+
+.page.v[number="2"] {
+	background-image:url('../img/banners/v/2.png');
+}

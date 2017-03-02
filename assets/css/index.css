@@ -1,0 +1,133 @@
+@import url('./banners.css');
+
+html, body {
+	height: 100%;
+	width: 100;
+	margin:0;
+	padding:0;
+	font-size: 13px;
+	line-height: 1.2;
+	background-color:#ffebb7;
+}
+
+* {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+#carouselBannerMaster {
+	display:none;
+}
+
+
+.main-bg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:0;
+	background-image:url('../img/bg.jpg');
+	background-size:cover;
+	opacity:0.25;
+}
+
+.main-content {
+	width:100%;
+	height:calc(100% - 75px);
+	position:relative;
+	z-index:2;
+}
+
+loading {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-image:url('../img/loading.png');
+	background-size:normal;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.loading loading { display:block; }
+
+.carousel {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	position:absolute!important;
+	top:0;
+	left:0;
+	display:none!important;
+}
+
+.loading .carousel { display:none!important; }
+.landscape #web-carousel.carousel { display:block!important; }
+.portrait #mobile-carousel.carousel { display:block!important; }
+
+.carousel .slick-list, .carousel .slick-list .slick-track { height:100%; }
+
+.slick-slide:focus {
+	outline: none !important;
+}
+
+.page {
+	width:100%;
+	height:100%;
+	background-size:95% 95%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.portrait .page {
+	background-size:100% 95%;
+}
+
+.footer {
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	height:75px;
+	background:#7f2905;
+	padding:10px;
+	position:relative;
+	z-index:3;
+}
+
+.footer span {
+	width:100%;
+	text-align:center;
+	color:#fff;
+	font-size:2rem;
+}
+
+.footer span.first {
+	border-right:1px solid rgba(255,255,255,0.35);
+}
+
+.my-slick-arrow {
+	background:rgba(255,255,255,0.15);
+	padding:10px 15px;
+	height:100%;
+	width:50px;
+	margin:0 5px;
+	cursor:pointer;
+	display:inherit;
+	align-items:center;
+	-webkit-align-items:center;
+	font-size:40px;
+	color:#fff;
+	text-shadow:0 2px #111;
+	border-radius:3px;
+	transition:all .5s ease;
+}
+
+.my-slick-arrow:hover {
+	background-color:rgba(1,1,1,0.15);
+}
+

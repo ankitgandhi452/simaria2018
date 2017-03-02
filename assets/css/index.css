@@ -120,7 +120,7 @@ loading {
 	width:50px;
 	margin:0 5px;
 	cursor:pointer;
-	display:inherit;
+	display:none!important;
 	align-items:center;
 	-webkit-align-items:center;
 	font-size:40px;
@@ -133,4 +133,7 @@ loading {
 .my-slick-arrow:hover {
 	background-color:rgba(1,1,1,0.15);
 }
+
+.portrait .my-slick-arrow.m { display:inherit!important; }
+.landscape .my-slick-arrow.w { display:inherit!important; }
 

@@ -15,12 +15,21 @@ $(function(){
 	window.onload = function() {
 		$('body').removeClass('loading');
 
-		$(".carousel").slick({
+		$("#web-carousel.carousel").slick({
 			arrows:true,
 			dots:false,
 			infinite:true,
-			prevArrow: $('.prev'),
-			nextArrow: $('.next'),
+			prevArrow: $('.prev.w'),
+			nextArrow: $('.next.w'),
+			slidesToScroll: 1
+		});
+
+		$("#mobile-carousel.carousel").slick({
+			arrows:true,
+			dots:false,
+			infinite:true,
+			prevArrow: $('.prev.m'),
+			nextArrow: $('.next.m'),
 			slidesToScroll: 1
 		});
 	}

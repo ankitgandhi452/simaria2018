@@ -16,7 +16,7 @@ $(function(){
 		$('body').removeClass('loading');
 
 		$(".carousel").slick({
-			arrows:false,
+			arrows:true,
 			dots:false,
 			infinite:true,
 			prevArrow: $('.prev'),

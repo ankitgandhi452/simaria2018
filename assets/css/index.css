@@ -40,6 +40,7 @@ html, body {
 	height:calc(100% - 75px);
 	position:relative;
 	z-index:2;
+
 }
 
 loading {
@@ -81,13 +82,13 @@ loading {
 .page {
 	width:100%;
 	height:100%;
-	background-size:95% 95%;
+	background-size:100% 100%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 
 .portrait .page {
-	background-size:100% 95%;
+	background-size:100% 100%;
 }
 
 .footer {
@@ -137,3 +138,37 @@ loading {
 .portrait .my-slick-arrow.m { display:inherit!important; }
 .landscape .my-slick-arrow.w { display:inherit!important; }
 
+
+.valign-wrapper {
+	display: flex !important;
+	display: -webkit-flex !important;
+	display: -moz-flex !important;
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+}
+
+.h .video-wrapper {
+	width: 50%;
+	padding-bottom: 25%;
+	height: 0;
+	position: relative;
+}
+
+.v .video-wrapper {
+	width: 75%;
+	padding-bottom: 50%;
+	height: 0;
+	position: relative;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} 

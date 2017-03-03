@@ -21,7 +21,9 @@ $(function(){
 			infinite:true,
 			prevArrow: $('.prev.w'),
 			nextArrow: $('.next.w'),
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
 		});
 
 		$("#mobile-carousel.carousel").slick({
@@ -30,7 +32,9 @@ $(function(){
 			infinite:true,
 			prevArrow: $('.prev.m'),
 			nextArrow: $('.next.m'),
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
 		});
 	}
 
